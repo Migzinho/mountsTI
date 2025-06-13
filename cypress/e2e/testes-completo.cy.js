@@ -26,7 +26,7 @@ describe('🔌3 Testes de API - Serverest', () => {
   let token = ''
   let produtoId = ''
 
-  
+
   it('✅ Login via API deve retornar token', () => {
     cy.request('POST', 'https://serverest.dev/login', {
       email: 'emidio@mignozzetti.com',
@@ -47,7 +47,7 @@ describe('🔌3 Testes de API - Serverest', () => {
         body: produto,
         failOnStatusCode: false
       }).then((res) => {
-        expect(res.status).to.be.oneOf([201, 400]) // 400 se já existir
+        expect(res.status).to.be.oneOf([201, 400]) 
         if (res.status === 201) {
           expect(res.body.message).to.eq('Cadastro realizado com sucesso')
         }
