@@ -33,6 +33,8 @@ git clone https://github.com/migzinho/mountsTI.git
 cd mountsTI
 npm install
 npx cypress open
+```
 
-## Desenvolvedor
+## 👤 Desenvolvedor
+
 Emidio Mignozzetti
