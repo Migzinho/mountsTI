@@ -26,6 +26,7 @@ describe('🔌3 Testes de API - Serverest', () => {
   let token = ''
   let produtoId = ''
 
+  
   it('✅ Login via API deve retornar token', () => {
     cy.request('POST', 'https://serverest.dev/login', {
       email: 'emidio@mignozzetti.com',

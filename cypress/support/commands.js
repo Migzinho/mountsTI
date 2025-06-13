@@ -37,6 +37,7 @@ Cypress.Commands.add('loginUI', (email, senha) => {
   cy.url().should('eq', 'https://front.serverest.dev/admin/home')
 })
 
+
 Cypress.Commands.add('cadastrarProdutoUI', (produto) => {
   cy.contains('Produtos').click()
   cy.get('input[name="nome"]').type(produto.nome)
